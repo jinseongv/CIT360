@@ -1,13 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Jake
- */
-public class Player_Symbol {
-    
+import static sun.audio.AudioPlayer.player;
+
+public class Player_Symbol extends player {
+
+    private String symbolChoice;
+    private int[][] symbolPosition;
+
+    public void setSymbol (String symbol) {
+        this.symbolChoice = symbol;
+    }
+
+    public void setSymbolPos(int[][] position) {
+        this.symbolPosition = position;
+    }
+
+    public String getSymbol() {
+        return symbolChoice;
+    }
+
+    public int[][] getSymbolPos() {
+        return symbolPosition;
+    }
+
 }
